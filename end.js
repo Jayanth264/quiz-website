@@ -9,12 +9,13 @@ if(!array){
    localStorage.setItem('highscore',JSON.stringify([]));
    array=JSON.parse(localStorage.getItem('highscore'));
 }
-y.addEventListener('keyup',()=>{
- //  if(x.nodeValue.length>=3)
+// y.addEventListener('keyup',()=>{
+//  //  if(x.nodeValue.length>=3)
 
-    x.disabled=false;    
-}
-);
+   
+// }
+// );
+ x.disabled=false;    
 savedata=(e)=>{
     e.preventDefault();
     const save={
