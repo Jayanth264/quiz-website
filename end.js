@@ -9,13 +9,13 @@ if(!array){
    localStorage.setItem('highscore',JSON.stringify([]));
    array=JSON.parse(localStorage.getItem('highscore'));
 }
-// y.addEventListener('keyup',()=>{
-//  //  if(x.nodeValue.length>=3)
-
+ y.addEventListener('keyup',()=>{
+  if(x.nodeValue.length>=3)
+ x.disabled=false; 
    
-// }
-// );
- x.disabled=false;    
+}
+ );
+   
 savedata=(e)=>{
     e.preventDefault();
     const save={
@@ -26,7 +26,7 @@ savedata=(e)=>{
     x.disabled=true;
     array.sort((a,b)=>{                  
         return a.score>b.score;
-    }
+    });
 //     let pos=binary_sort(array,score);
    
 //     if(pos==-1) array.unshift(save);
