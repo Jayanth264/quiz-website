@@ -9,7 +9,7 @@ if(!array){
    localStorage.setItem('highscore',JSON.stringify([]));
    array=JSON.parse(localStorage.getItem('highscore'));
 }
-y.addEventListener('change',()=>{
+y.addEventListener('keyup',()=>{
  //  if(x.nodeValue.length>=3)
 
     x.disabled=false;    
