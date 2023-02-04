@@ -1,5 +1,5 @@
 const x=document.getElementById('btn');
-const y=document.getElementById('username')
+const y=document.getElementById('username');
 const score=localStorage.getItem('maxscore');
 const score_shoe=document.getElementById('score');
 score_shoe.innerText=score;
